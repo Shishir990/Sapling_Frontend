@@ -1,0 +1,1 @@
+import{r}from"./index-iWWElUJo.js";function m(s,t,a=[]){const[c,n]=r.useState(1),o=Math.max(1,Math.ceil(s.length/t)),e=Math.min(c,o),u=JSON.stringify(a);return r.useEffect(()=>n(1),[u]),{items:r.useMemo(()=>s.slice((e-1)*t,e*t),[s,e,t]),page:e,setPage:n,pageCount:o,props:{page:e,pageCount:o,total:s.length,pageSize:t,onPageChange:n}}}export{m as u};
